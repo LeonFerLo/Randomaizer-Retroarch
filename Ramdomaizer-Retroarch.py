@@ -14,7 +14,7 @@ RETROARCH_PATH = "C:\\RetroArch-Win64\\retroarch.exe"
 CORES_DIR = "C:\\RetroArch-Win64\\cores\\"
 ROM_DIR = "roms"
 SAVE_DIR = "saves"
-INTERVALO_MINUTOS = 1
+INTERVALO_MINUTOS = 5
 ESPERA_GUARDADO = 3
 
 # Mapeo de cores
