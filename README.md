@@ -4,7 +4,7 @@ y cada 5 minutos el juego cambiara, pero no te preocupes la partida se guarda y 
 
 Configuralo:
 Puedes elegir la fuente para el temporizador
-Tambien puedes fijar la pestaña para poder ver el timer en todo momento con "O"
+Tambien puedes fijar la pestaña para poder ver el timer en todo momento con "O" y "X"
 Y desplagar y plegar las configuraciones con ☰ y ▼
 No olvides elegir en que monitor se mostrara el timer en configuracion
 
