@@ -8,4 +8,6 @@ Tambien puedes fijar la pestaña para poder ver el timer en todo momento con "O"
 Y desplagar y plegar las configuraciones con ☰ y ▼
 No olvides elegir en que monitor se mostrara el timer en configuracion
 
+Advertencia: Lee el codigo y descarga los nucleos de las extenciones que son tus juegos, mas adelante s adregara una advertencia de intalacion en el programa
+
 Mas actualizaciones pronto.
