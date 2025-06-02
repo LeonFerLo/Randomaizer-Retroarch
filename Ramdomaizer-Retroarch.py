@@ -8,7 +8,7 @@ from tkinter import font, ttk
 from pathlib import Path
 from threading import Thread
 import screeninfo
-
+from tkinter import messagebox
 # CONFIGURACIÓN
 RETROARCH_PATH = "C:\\RetroArch-Win64\\retroarch.exe"
 CORES_DIR = "C:\\RetroArch-Win64\\cores\\"
@@ -567,14 +567,24 @@ class RetroArchGUI:
                 
             rom = get_random_rom()
             if not rom:
-                self.contador.set("No hay ROMs")
+                messagebox.showerror("Error", "No hay ROMs válidas en la carpeta.\nAgrega ROMs compatibles.")
                 break
                 
             # Ejecutar RetroArch
-            core_path = os.path.join(CORES_DIR, CORE_MAP.get(
-                os.path.splitext(rom)[1].lower(), 
-                'mgba_libretro.dll'
-            ))
+            rom_ext = os.path.splitext(rom)[1].lower()
+
+            # Verificar si la extensión es válida
+            if rom_ext not in CORE_MAP:
+                messagebox.showerror("Formato no soportado", f"El formato '{rom_ext}' no está soportado.\nROM: {rom}")
+                break
+
+            core_file = CORE_MAP[rom_ext]
+            core_path = os.path.join(CORES_DIR, core_file)
+
+            # Verificar si el núcleo existe
+            if not os.path.isfile(core_path):
+                messagebox.showerror("Núcleo faltante", f"No se encontró el núcleo necesario:\n{core_file}")
+                break
             rom_path = os.path.join(ROM_DIR, rom)
             save_path = os.path.join(SAVE_DIR, f"{os.path.splitext(rom)[0]}.state")
             
