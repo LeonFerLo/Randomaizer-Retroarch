@@ -1,0 +1,21 @@
+Los Nucleos necesarios para el funcionamiento de todos los juego soportados son:
+nestopia_libretrodll
+snes9x_libretrodll
+mgba_libretrodll
+gambatte_libretrodll
+mupen64plus_next_libretrodll
+melonDS_libretrodll
+citra_libretrodll
+genesis_plus_gx_libretrodll
+picodrive_libretrodll
+beetle_psx_libretrodll
+ppsspp_libretrodll
+stella_libretrodll
+prosystem_libretrodll
+handy_libretrodll
+virtualjaguar_libretrodll
+beetle_cygne_libretrodll
+beetle_pce_fast_libretrodll
+vice_x64_libretrodll
+dosbox_libretrodll
+mame2003_plus_libretrodll
